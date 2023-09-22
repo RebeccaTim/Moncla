@@ -1,0 +1,389 @@
+@font-face {
+  font-family: 'Lemonmilk';
+  src: url("fonts/LEMONMILK-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: 'LemonmilkLight';
+	font-style: light;
+	src: url("fonts/LEMONMILK-Light.otf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lemonmilk';
+}
+
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+/*** Header Styles ***/
+header {
+  width: 100vw;
+  height: 80vh;
+  background: #29235c;
+  display: flex;
+}
+/*** Navigation Styles ***/
+nav {
+  width: 100vw;
+  height: 110px;
+  background: white;
+  background-size: 70% 120%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  z-index: 10;
+  transition: all 0.3s;
+}
+nav.navShadow {
+  box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+  height: 85px;
+  background: #29235c;
+  color: white;
+}
+nav.navShadow #word-mark {
+  opacity: 0;
+}
+
+#brand, #menu, #pages {
+  display: flex;
+  align-items: center;
+}
+#brand {
+  padding-left: 40px;
+}
+#logo img{
+  width: 233px;
+  height: 68px;
+  cursor: pointer;
+}
+#logo .logoresize{
+  width: 68px;
+  height: 68px;
+  cursor: pointer;
+}
+/*#word-mark img{
+  width: 120px;
+  height: 20px;
+  margin-left: 20px;
+  opacity: 1;
+  transition: all 0.3s;
+}*/
+/*** Menu Styles ***/
+#menu {
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+li {
+  margin-left: 20px;
+  list-style: none;
+}
+li a {
+  width: 100%;
+  height: 20px;
+  text-align: center;  
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.gradient li a{
+  background: rgb(236,77,80);
+  background: radial-gradient(circle, rgba(236,77,80,1) 0%, rgba(50,35,97,1) 52%, rgba(18,117,188,1) 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#menu-toggle {
+  width: 55px;
+  height: 55px;
+  background: #2ea8ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+#menu-toggle:hover .bar {
+  width: 25px;
+}
+#menu-toggle.closeMenu .bar {
+  width: 25px;
+}
+#menu-toggle.closeMenu .bar:first-child {
+  transform: translateY(7px) rotate(45deg);
+}
+#menu-toggle.closeMenu .bar:nth-child(2) {
+  transform: scale(0);
+}
+#menu-toggle.closeMenu .bar:last-child {
+  transform: translateY(-7px) rotate(-45deg);
+}
+.bar {
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s ease-in-out;
+}
+.bar:nth-child(2) {
+  width: 20px;
+  margin: 5px 0;
+}
+.bar:last-child {
+  width: 15px;
+}
+/*** Hero Section Styles ***/
+#hero-section {
+  width: 100vw;
+  height: calc(77vh - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+}
+#head-line {
+  width: 960px;
+  height: 450px;
+  background: #29235c;
+  border-radius: 90px;
+  position: relative;
+}
+
+/* SLIDESHOW */
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 960px;
+      height: 450px;
+      border-radius: 90px;
+      position: relative;
+      margin: auto;
+    }
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    /* Style the images */
+    .mySlides img{
+      border-radius: 90px;
+      width:100%; 
+      height:450px;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: #29235c;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+      color: white;
+    }
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+/* Social media */
+.media_bar{
+  position: fixed;
+  right: 0;
+  top: 90%;
+}
+#media{
+  transition: all 0.3s;
+}
+#media a{
+  width: 37px;
+  height: 37px;
+  font-size: 24px;
+  border-radius: 100%;
+  transition: 1s;
+}
+.fb {
+  background: #3b5999;
+}
+.mail {
+  background: #bd081c;
+}
+.ending{
+  display: flex;
+}
+
+/* Return to top button */
+.top {
+  position: fixed;
+  top: 77%;
+  width: auto;
+  margin-top: -22px;
+  padding: 8px 16px 14px 16px;
+  color: #29235c;
+  font-size: 57px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  left: 0;
+  opacity: 0;
+}
+#arrow{
+  display: inline-block;
+  height: 100px;
+}
+#toptext{
+  font-size: 15px;
+  position: absolute;
+  bottom: 27px;
+  left: 18px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.top:hover {
+  background-color: #29235c;
+  opacity: 0;
+  color: white;
+}
+
+nav.navShadow .top {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+nav.navShadow .top:hover {
+  opacity: 1;
+}
+
+
+/* Name */
+#name {
+  padding: 8px 12px;
+  margin-left: 100px;
+  width: 27%;
+  text-align: center;
+  color: white;
+}
+#name span{
+  font-family: 'LemonmilkLight';
+  font-size: x-large;
+}
+
+
+/*** Section Styles ***/
+section {
+  width: 100vw;
+  /*height: calc(100vh - 100px);*/
+  display: flex;
+  justify-content: center;
+}
+
+section article {
+  padding: 8px 12px;
+  bottom: 8px;
+  font-size: large;
+  width: 57%;
+  text-align: left;
+  font-family: "lemonmilklight";
+}
+
+footer {
+  background: #29235c;
+  height: 110px;
+  width: 100vw;
+}
+
+
+
+
+/*** Responsive Menu For Smaller Device ***/
+@media screen and (max-width: 767px) {
+  #name {
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 30%;
+    text-align: center;
+    display: flex;
+  }
+  #menu-toggle {
+    display: flex;
+ }
+  #pages {
+    display: inline-block;
+    width: 100vw;
+    height: 0;
+    background: white;
+    position: absolute;
+    top: 160px;
+    transform: translate();
+    box-shadow: 0 5px 30px -4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+ }
+  ul.showMenu {
+    height: 250px;
+ }
+  ul.showMenu li {
+    height: 80px;
+    opacity: 1;
+    visibility: visible;
+ }
+  li {
+    width: 50%;
+    height: 80px;
+    float: left;
+    padding-left: 40px;
+    opacity: 0;
+    visibility: hidden;
+    margin-left: 0;
+    transition: all 0.3s 0.1s;
+ }
+  li:first-child, li:nth-child(2) {
+    margin-top: 80px;
+ }
+  #head-line {
+    transform: scale(0.8);
+ }
+}
+
+
