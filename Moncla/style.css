@@ -12,7 +12,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Lemonmilk';
+  font-family: 'LemonmilkLight';
 }
 
 
@@ -304,6 +304,7 @@ nav.navShadow .top:hover {
   width: 27%;
   text-align: center;
   color: white;
+  font-family: 'Lemonmilk';
 }
 #name span{
   font-family: 'LemonmilkLight';
@@ -320,12 +321,18 @@ section {
 }
 
 section article {
-  padding: 8px 12px;
+  padding: 70px 12px;
   bottom: 8px;
-  font-size: large;
+  font-size: x-large;
   width: 57%;
   text-align: left;
-  font-family: "lemonmilklight";
+  font-family: "Calibri";
+}
+article ul{
+  margin-left: 7%;
+}
+article p, article li, article strong, article em{
+  font-family: "Calibri";
 }
 
 footer {

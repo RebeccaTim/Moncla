@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>    
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
@@ -73,18 +74,32 @@
         <h1 id="name">Missions Spécifiques</h1>
     </div>
 </header>
+    <div class="media_bar"> 
+        <ul id="media">
+            <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="mail"><i class="fa fa-regular fa-at"></i></a></li>
+        </ul>                           
+    </div>      
     <section id="section00">
-        <article><br><br>
-            Professionnels, les spécificités de vos domaines d’intervention requièrent une recherche d’exigence et d’efficacité opérationnelle au quotidien. 
-            Au travers de supports de formation crées sur mesure, je viens en appui de vos compétences pour transmettre à votre équipe mon savoir-faire technique et partager ma culture automobile.
-            Développons ensemble des actions adaptées à vos réalités professionnelles.
-            Place à notre créativité, ayons toujours un temps d’avance.
-            Formation maîtrise du véhicule opérationnel en intervention (unités spéciales – corps d’intervention)
-            Test de développement concept car (routier ou piste sécurisée)
-            Test centre de recherche (création ADAS, données physiologiques/conduite …)
-            Organisation lancement nouveaux véhicules : parcours d’essai, présentation statique / dynamique, démonstration
-            Formation à destination des conseillers automobile : process gestion d’essai client, mise en lumière des nouvelles technologies, analyse nouveau produit
-            Et bien plus encore …
+        <article>
+        <p><strong>Professionnels</strong>, les sp&eacute;cificit&eacute;s de vos domaines d&rsquo;intervention requi&egrave;rent une recherche d&rsquo;<strong>exigence</strong> et d&rsquo;<strong>efficacit&eacute; op&eacute;rationnelle</strong> au quotidien.&nbsp;</p>
+        <br>
+        <p>Au travers de supports de <strong>formation</strong> cr&eacute;&eacute;s <strong>sur mesure</strong>, je viens en appui de vos comp&eacute;tences pour transmettre &agrave; votre &eacute;quipe mon <strong>savoir-faire technique</strong> et partager ma <strong>culture automobile</strong>.</p>
+        <br>
+        <p>D&eacute;veloppons ensemble des <strong>actions adapt&eacute;es</strong> &agrave; vos <strong>r&eacute;alit&eacute;s professionnelles</strong>.</p>
+        <br>
+        <p>Place &agrave; notre cr&eacute;ativit&eacute;, ayons toujours <strong>un temps d&rsquo;avance</strong>.</p>
+        <br>
+        <ul>
+            <li style="list-style-type:circle"><strong>Formation ma&icirc;trise</strong> du v&eacute;hicule op&eacute;rationnel en <strong>intervention</strong><span style="color:#2f5496; font-size: large"><em> (unit&eacute;s sp&eacute;ciales &ndash; corps d&rsquo;intervention)</em></li>
+            <li style="list-style-type:circle"><strong>Test</strong> de <strong>d&eacute;veloppement concept car</strong><span style="color:#2f5496; font-size: large"><em> (routier ou piste s&eacute;curis&eacute;e)</em></li>
+            <li style="list-style-type:circle"><strong>Test centre de recherche</strong><span style="color:#2f5496; font-size: large"><em> (cr&eacute;ation ADAS, donn&eacute;es physiologiques/conduite &hellip;)</em></li>
+            <li style="list-style-type:circle">Organisation <strong>lancement nouveaux v&eacute;hicules</strong>&nbsp;:<span style="color:#2f5496; font-size: large"><em> parcours d&rsquo;essai, pr&eacute;sentation statique / dynamique, d&eacute;monstration</em></li>
+            <li style="list-style-type:circle"><strong>Formation </strong>&agrave; destination des <strong>conseillers automobile</strong>&nbsp;:<span style="color:#2f5496; font-size: large"><em> process gestion d&rsquo;essai client, mise en lumi&egrave;re des nouvelles technologies, analyse nouveau produit</em></li>
+            <li style="list-style-type:circle">Et bien plus encore &hellip;</li>
+        </ul>
+
+        <p>&nbsp;</p>
 
         </article>
     </section>

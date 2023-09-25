@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>    
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
@@ -73,19 +74,35 @@
         <h1 id="name">école de pilotage / <br> Coaching</h1>
     </div>
 </header>
+    <div class="media_bar"> 
+        <ul id="media">
+            <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="mail"><i class="fa fa-regular fa-at"></i></a></li>
+        </ul>                           
+    </div>      
     <section id="section00">
         <article><br><br>
-        L’art de la maîtrise automobile : trajectoire, gestion des transferts de charge, coordination, dissociation, gestuelles techniques spécifiques. Je vous accompagne pour découvrir les subtilités de l’univers des sports mécaniques et pour vous transmettre les techniques de pilotage propre à la discipline qui vous passionne.
-Circuit asphalte
-Off road 
-Circuit Terre
-Accessible à tous, je vous conseille pour vos premiers tours de circuit et vous épaule pour répondre à vos besoins de perfectionner votre technique de pilotage et/ou votre approche de la discipline. 
-Coaching club automobile
-Initiation pilotage circuit
-Perfectionnement pilotage
-Accompagnement enfant - premier motorisé
-Evènements groupe / entreprise
-La passion se vit avec le sourire, la simplicité et la bonne humeur.
+        <p><strong>L&rsquo;art de la ma&icirc;trise</strong> automobile&nbsp;: trajectoire, gestion des transferts de charge, coordination, dissociation, gestuelles techniques sp&eacute;cifiques. Je vous accompagne pour d&eacute;couvrir les <strong>subtilit&eacute;s</strong> de l&rsquo;univers des <strong>sports m&eacute;caniques </strong>et pour vous transmettre les <strong>techniques de pilotage</strong> propre &agrave; la circleipline qui vous passionne.</p>
+        <br>
+        <ul>
+            <li style="list-style-type:circle"><strong>Circuit</strong> asphalte</li>
+            <li style="list-style-type:circle"><strong>Off road&nbsp;</strong></li>
+            <li style="list-style-type:circle">Circuit Terre</li>
+        </ul>
+        <br>
+        <p><strong>Accessible &agrave; tous</strong>, je vous conseille pour vos premiers tours de <strong>circuit </strong>et vous &eacute;paule pour r&eacute;pondre &agrave; vos besoins de <strong>perfectionner </strong>votre technique de pilotage et/ou votre approche de la circleipline.&nbsp;</p>
+        <br>
+        <ul>
+            <li style="list-style-type:circle"><strong>Coaching club</strong> automobile</li>
+            <li style="list-style-type:circle"><strong>Initiation pilotage</strong> circuit</li>
+            <li style="list-style-type:circle">Perfectionnement pilotage</li>
+            <li style="list-style-type:circle">Accompagnement <strong>enfant - </strong><span style="color:#ff0000"><strong>premier motoris&eacute;</strong></span></li>
+            <li style="list-style-type:circle"><strong>Ev&egrave;nements groupe</strong> / entreprise</li>
+        </ul>
+        <br>
+        <p>La passion se vit avec le sourire, la simplicit&eacute; et la bonne humeur.</p>
+
+        <p>&nbsp;</p>
 
         </article>
     </section>
